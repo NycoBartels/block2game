@@ -9,6 +9,8 @@ if(!is_array(dialogue[page])){
 		text_array = dialogue[page];
 		text_array_len = array_length_1d(text_array);
 		choice_dialogue = true;
+		lines = line_counter(text_array,text_max_width)
+		show_debug_message(lines)
 }
 
 counter = 0;

@@ -1,8 +1,8 @@
 if(keyboard_check_pressed(vk_space) && !instance_exists(obj_textbox) && distance_to_object(par_npc) < 50 && interact = true){
 	instance_create_layer(obj_player.x, obj_player.y, "Text", obj_textbox);
 }
-//on left mouse press walk
 /*
+//on left mouse press walk
 path = undefined;
 if (mouse_check_button_released(mb_left)){
 	target_x = mouse_x
@@ -16,7 +16,7 @@ path = undefined;
 if (mouse_check_button_released(mb_left)){
 	target_x = mouse_x 
 	target_y = mouse_y 
-	inst = instance_position(target_x, target_y, par_depthobject);
+	var inst = instance_position(target_x, target_y, par_depthobject);
 	vec_x = target_x - obj_player.x;
 	vec_y = target_y - obj_player.y;
 	
@@ -44,6 +44,5 @@ if (mouse_check_button_released(mb_left)){
 		path_start(path, 3, path_action_stop, true);
 	}
 }
-
 
 

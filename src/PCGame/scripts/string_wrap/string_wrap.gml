@@ -2,7 +2,6 @@ function string_wrap(str, max_width){
 
 var str_len = string_length(str);
 var last_space = 1;
-
 var count = 1;
 var substr;
 
