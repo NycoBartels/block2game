@@ -23,7 +23,6 @@ if(keyboard_check_pressed(vk_space)){
 //changing dialouge choice
 if (choice_dialogue){
 	choice += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
-	
 	if(choice > text_array_len-1) choice = 0
 	if(choice < 0) choice = text_array_len-1
 }
