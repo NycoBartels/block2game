@@ -3,9 +3,10 @@ port = spr_portrait;
 namebox = spr_namebox;
 
 //setting game view
-gamewidth = room_width * 5;
-gameheight = room_height * 5;
-
+//gamewidth = room_width * 5;
+//gameheight = room_height * 5;
+gamewidth = view_wport[0];
+gameheight = view_hport[0];
 
 //getting box size
 boxwidth = sprite_get_width(box);
