@@ -2,10 +2,10 @@ function line_counter(str_array, max_width){
 	//setting up
 	var last_space = 1;
 	var count = 1;
-	var line_count = 1
+	var line_count = 0
 	var substr;
+	var button_height;
 	var len = array_length_1d(str_array);
-	var lines;
 		//getting string out of array
 		var i = 0; repeat(len){
 		var str = str_array[i]
@@ -17,21 +17,22 @@ function line_counter(str_array, max_width){
 				if(string_width(substr) > max_width){
 				str = string_delete(str, last_space, 1);
 				str = string_insert("\n", str, last_space)
-				//counting lines
-				line_count = string_count("\n", str) + 1
-				}	
+				//counting extra lines
+				line_count = string_count("\n", str) 
+				}
 			count++;
 			}
-		//setting the line count back into an array
-		lines[i] = line_count
+		//adding the normal lines
+		line_count++
+		//putting button y value in array
+		button_height[i] = line_count * text_height
 		//resetting
 		count = 1
-		line_count = 1
 		//next array
 		i++;
 		}
 	//returning the line values in an array
-	return (lines);
+	return (button_height);
 }
 	
 

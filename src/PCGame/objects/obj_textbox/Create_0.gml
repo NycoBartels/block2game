@@ -75,7 +75,7 @@ with(instance_nearest(obj_player.x, obj_player.y, par_npc)){
 text_wrapped = string_wrap (dialogue[page], text_max_width);
 str_len = string_length(dialogue[page]);
 counter = 0;
-
+test = 0
 
 //event_perform(ev_other, ev_user1);
 

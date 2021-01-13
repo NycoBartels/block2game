@@ -30,11 +30,17 @@ if(!is_array(dialogue[page])){
 	var i = 0, y_add = 0;repeat(text_array_len){
 		if (choice == i){c = choice_col; draw_text_color(box_x+text_max_width, text_y+y_add, "<", c,c,c,c, 1) }
 		else{c = text_col;}
-		
 		draw_text_ext_color(text_x, text_y+y_add, text_array[i], text_height, text_max_width, c,c,c,c, 1);
 		y_add += string_height_ext(text_array[i], text_height, text_max_width)
+			draw_button(text_x, text_y+button_height[i]-button_height[0], text_x + text_max_width, text_y+button_height[i], false)
+			if(button_height[0]){
+				//draw_button(text_x, text_y, text_x + text_max_width, text_y+button_height[1], false)
+				test++
+			}
+			show_debug_message(button_height[i])
 		i++;
 	}
 	
 }
+
 
