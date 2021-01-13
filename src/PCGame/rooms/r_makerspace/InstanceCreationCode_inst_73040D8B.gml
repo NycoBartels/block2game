@@ -1,4 +1,6 @@
 sprite_index = spr_3dprinter_npc_idle;
+sprite_talking = spr_3dprinter_npc_talking;
+sprite_idle = spr_3dprinter_npc_idle;
 
 portrait_index = 0;
 name = "Kris";

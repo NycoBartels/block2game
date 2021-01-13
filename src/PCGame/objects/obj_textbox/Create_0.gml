@@ -79,7 +79,11 @@ counter = 0;
 
 //event_perform(ev_other, ev_user1);
 
+interact = true;
 
+with (instance_nearest(obj_player.x, obj_player.y, obj_npc)){
+	sprite_index = sprite_talking;			//setting sprite to talking when dialogue starts
+}
 
 
 //stringHeight = string_height(text);

@@ -1,5 +1,6 @@
 sprite_index = spr_lasercutter_npc_idle;
-image_speed = 1;
+sprite_talking = spr_lasercutter_npc_talking;
+sprite_idle = spr_lasercutter_npc_idle;
 
 portrait_index = 0;
 name = "Marcello";

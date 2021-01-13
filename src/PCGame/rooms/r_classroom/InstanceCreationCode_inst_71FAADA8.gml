@@ -1,5 +1,6 @@
 sprite_index = spr_teacher_idle;
-
+sprite_talking = spr_teacher_talking;
+sprite_idle = spr_teacher_idle;
 portrait_index = 0;
 name = "Pierre deShawn";
 text = [

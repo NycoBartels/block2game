@@ -9,7 +9,12 @@ if(keyboard_check_pressed(vk_space)){
 		if(choice_dialogue) line = line[choice];
 	
 		if(line == 0) page++;	
-		else if(line == -1){ instance_destroy(); exit; }
+		else if(line == -1){ 
+			with (instance_nearest(obj_player.x, obj_player.y, obj_npc)){
+				sprite_index = sprite_idle;				//resetting sprite to idle once dialogue done
+			}	
+			instance_destroy(); exit; 
+		}
 		else page = line
 		
 		//setting interact and delay before reset
@@ -18,7 +23,10 @@ if(keyboard_check_pressed(vk_space)){
 		event_perform(ev_other, ev_user1);
 		
 		//no page destroy tekst box
-	} else{ instance_destroy();}
+	} else{ 
+
+		instance_destroy();
+	}
 }
 //changing dialouge choice
 if (choice_dialogue){

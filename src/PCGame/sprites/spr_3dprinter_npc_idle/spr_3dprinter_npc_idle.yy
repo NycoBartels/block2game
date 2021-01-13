@@ -35,7 +35,7 @@
     "spriteId": {"name":"spr_3dprinter_npc_idle","path":"sprites/spr_3dprinter_npc_idle/spr_3dprinter_npc_idle.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 2.0,
+    "playbackSpeed": 0.5,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

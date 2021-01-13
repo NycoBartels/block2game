@@ -1,5 +1,6 @@
 sprite_index = spr_survey_npc_idle;
-
+sprite_talking = spr_survey_npc_talking;
+sprite_idle = spr_survey_npc_idle;
 portrait_index = 0;
 name = "Samira";
 text = [
