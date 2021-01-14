@@ -13,7 +13,7 @@ if (mouse_check_button_released(mb_left)){
 }
 */
 path = undefined;
-if (mouse_check_button_released(mb_left)){
+if (mouse_check_button_pressed(mb_left)){
 	target_x = mouse_x 
 	target_y = mouse_y 
 	
