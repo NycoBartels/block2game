@@ -8,7 +8,7 @@ text = [
 		[
 		"What am I supposed to do?",
 		"Where do I need to go?",
-		"I gotta go...show_debug_message)"
+		"I gotta go..."
 		],
 		"Did you not pay attention in class?",
 		"Oh wait, it hasn't been programmed yet... my bad. Let me fill you in on the details.",

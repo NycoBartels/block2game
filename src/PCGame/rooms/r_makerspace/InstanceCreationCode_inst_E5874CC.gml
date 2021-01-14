@@ -1,4 +1,6 @@
 sprite_index = spr_3dprinter;
+sprite_idle = spr_3dprinter;
+sprite_talking = spr_3dprinter;
 
 portrait_index = 0;
 name = "3D Printer";

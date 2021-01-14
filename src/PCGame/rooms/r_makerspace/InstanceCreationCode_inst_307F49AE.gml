@@ -1,4 +1,6 @@
 sprite_index = spr_lasercutter;
+sprite_idle = spr_lasercutter;
+sprite_talking = spr_lasercutter;
 
 portrait_index = 0;
 name = "Lasercutter";
