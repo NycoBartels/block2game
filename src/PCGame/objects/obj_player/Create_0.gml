@@ -3,6 +3,7 @@ target_x = 0
 target_y = 0
 radius = 32
 interact = true;
-
+test = 0
 portrait_index = 0;
 name ="Player"
+scale = 5

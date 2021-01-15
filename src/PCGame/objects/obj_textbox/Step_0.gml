@@ -1,5 +1,5 @@
 //dialouge skip
-if(keyboard_check_pressed(vk_space)){
+if(mouse_check_button_pressed(mb_left)){
 	
 	if(!choice_dialogue and counter < str_len){ counter = str_len; }
 		
@@ -31,20 +31,21 @@ if(keyboard_check_pressed(vk_space)){
 
 //changing dialouge choice
 if(choice_dialogue){
-	choice += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
-	if(choice > text_array_len-1) choice = 0
-	if(choice < 0) choice = text_array_len-1	
-	
-/*
-		var len = array_length_1d(button_height);
+	//getting the amount of questions
+	var len = array_length_1d(button_height);
+	//creating button to the amount of questions
 	var i = 0; repeat(len){
-		button[i] = draw_button(text_x, text_y, text_x+text_max_width, text_y+button_height[i], false);
-		
-	if(button[i] != noone and mouse_check_button_pressed(mb_left)){
-		button[i] = choice
+		//first button checks if the mouse is in the rectangle of the text
+	if(point_in_rectangle(mouse_x,mouse_y,text_x/scale, text_y/scale, (text_x+text_max_width)/scale, (text_y+button_height[0])/scale)){
+			choice = 0
+		}	
+		//the rest of the buttons checks if the mouse is in the rectangle of the text
+		if(i>=1){
+	if(point_in_rectangle(mouse_x,mouse_y,text_x/scale, (text_y+button_height[i-1])/scale, (text_x+text_max_width)/scale, (text_y+button_height[i])/scale)){	
+			choice = i
 	}
-show_debug_message(test)
+		}
 	i++
-
-}*/
 }
+}
+		

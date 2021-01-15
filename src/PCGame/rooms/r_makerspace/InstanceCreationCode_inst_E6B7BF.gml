@@ -1,3 +1,7 @@
+n_x = x
+n_y = y
+n_width = sprite_get_width(spr_desk_left)
+n_height = sprite_get_height(spr_desk_left)
 sprite_index = spr_desk_left;
 sprite_idle = spr_desk_left;
 sprite_talking = spr_desk_left;

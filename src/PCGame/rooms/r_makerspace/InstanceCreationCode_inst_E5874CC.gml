@@ -1,3 +1,7 @@
+n_x = x
+n_y = y
+n_width = sprite_get_width(spr_3dprinter)
+n_height = sprite_get_height(spr_3dprinter)
 sprite_index = spr_3dprinter;
 sprite_idle = spr_3dprinter;
 sprite_talking = spr_3dprinter;

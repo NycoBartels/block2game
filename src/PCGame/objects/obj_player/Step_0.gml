@@ -1,5 +1,15 @@
-if(keyboard_check_pressed(vk_space) && !instance_exists(obj_textbox) && distance_to_object(par_npc) < 50 && interact = true){
-	instance_create_layer(obj_player.x, obj_player.y, "Text", obj_textbox);
+with(instance_nearest(mouse_x, mouse_y, par_npc)){
+obj_player.npc_x = n_x	
+obj_player.npc_y = n_y
+obj_player.npc_width = n_width / 2
+obj_player.npc_height = n_height
+obj_player.test_name2 = name
+}
+if(point_in_rectangle(mouse_x,mouse_y,npc_x-npc_width,npc_y - npc_height ,npc_x+npc_width,npc_y)){
+
+	if(mouse_check_button_pressed(mb_left) && !instance_exists(obj_textbox) && distance_to_object(par_npc) < 50 && distance_to_point(mouse_x,mouse_y) < 50 && interact = true){
+		instance_create_layer(obj_player.x, obj_player.y, "Text", obj_textbox);
+	}
 }
 /*
 //on left mouse press walk
@@ -12,8 +22,13 @@ if (mouse_check_button_released(mb_left)){
 	path_start(path, 3, path_action_stop, true);
 }
 */
+if(instance_exists(obj_textbox)){
+	active_textbox = true
+} else {
+	active_textbox = false
+}
 path = undefined;
-if (mouse_check_button_pressed(mb_left)){
+if (mouse_check_button_pressed(mb_left) and active_textbox= false){
 	target_x = mouse_x 
 	target_y = mouse_y 
 	

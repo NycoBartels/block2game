@@ -2,9 +2,10 @@ box = spr_box;
 port = spr_portrait;
 namebox = spr_namebox;
 
-//setting game view
-gamewidth = room_width * 5;
-gameheight = room_height * 5;
+//setting game view and scale
+scale = 5
+gamewidth = room_width * scale;
+gameheight = room_height * scale;
 
 
 //getting box size
@@ -84,6 +85,3 @@ interact = true;
 with (instance_nearest(obj_player.x, obj_player.y, obj_npc)){
 	sprite_index = sprite_talking;			//setting sprite to talking when dialogue starts
 }
-
-
-//stringHeight = string_height(text);

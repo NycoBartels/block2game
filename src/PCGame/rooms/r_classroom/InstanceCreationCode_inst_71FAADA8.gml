@@ -1,3 +1,7 @@
+n_x = x
+n_y = y
+n_width = sprite_get_width(spr_teacher_idle)
+n_height = sprite_get_height(spr_teacher_idle)
 sprite_index = spr_teacher_idle;
 sprite_talking = spr_teacher_talking;
 sprite_idle = spr_teacher_idle;
