@@ -5,7 +5,7 @@ if(mouse_check_button_pressed(mb_left)){
 		//page turning
 		else if(page < array_length_1d(text)-1){
 		var line = npc_next_line[page];
-		if(choice_dialogue) line = line[choice];
+		if(choice_dialogue) line = line[choice];//setting the chosen line
 	
 		if(line == 0) page++;	
 		else if(line == -1){ 
@@ -19,7 +19,6 @@ if(mouse_check_button_pressed(mb_left)){
 		
 		//no page destroy tekst box
 	} else{ 
-
 		instance_destroy();
 	}
 }
