@@ -74,6 +74,6 @@ text_wrapped = string_wrap (dialogue[page], text_max_width);
 str_len = string_length(dialogue[page]);
 counter = 0;
 
-with (instance_nearest(obj_player.x, obj_player.y, obj_npc)){
+with (instance_nearest(mouse_x, mouse_y, obj_npc)){
 	sprite_index = sprite_talking;			//setting sprite to talking when dialogue starts
 }
