@@ -4,26 +4,32 @@ sprite_idle = spr_lunchlady_idle;
 
 portrait_index = 0;
 name = "LunchPerson";
-text = ["Hi, you can have your stuff 3D printed here.",    //0, go to 1
+text = ["Hello. Can I help you with something?",    //0, go to 1
          [
-          "Can you print this? (Hand over USB-stick)",                        //1, go to 2
-          "Nah, just want to talk.",                     //1, go to 4
-          "Never mind..."                                      //1, END
+          "I'd like to buy something",                        //1, go to 3
+          "Nevermind..."                                      //1, go to 2
          ],
-
-         "Thanks, it might take a couple of minutes though. You can walk around a bit in the mean time.",             //2, go to 3
-         "Or don't. I'm not your mom.",             //3, END
-         "Okay, cool. How is your project coming along?",            //4, go to 5
+		 
+		 "Alright, see you around.",						// 2,, END
+         "Oh yeah, sure thing. What would you like?",             //3, go to 4
+		 
          [
-          "Doing okay",                        //5, go to 6
-          "I don't want to talk about it.",       //5, go to 7
+          "Whatever you recommend",                           //4 go to 5
+          "One taco, please.",								  //4 go to 7
+		  "I'd like on of those Dutch sausage rolls, please",  //4 go to 9
+		  "Nevermind..."										//END
          ],
-         "If you need anything else, let me know.",            //6, eND
-         "Oh okay",
-         ["please end it",
-          "this is a bruh moment"
-          ],
-		  "ye it is"				//9
-         ];                                        //7, END
+         "Just anything, huh?",            // 5 go to 6
+		 "Hmmmm, I'd recommend the Berliner, it's our specialty.",	//6 go to 10
+         "Ah, not a lot of people get this.",	//7 go to 8
+		 "A nice change of pace, huh?",			//8 go to FINAL 
+		 "Ah those are always nice.",			//9 go to FINAL
+         [
+		 "(Buy it)",							//10 go to 11
+          "(Don't buy it)"						//10 go to 12
+         ],
+		  "Here you go, fijne dag!",				//11, END
+		  "Anything else then?"					//12 go to 4
+         ];                                        
 speakers = [id, obj_player, id, id];
-next_line = [0, [2, 4, -1], 3, -1, 5, [6, 7], -1, 0, [-1, 9], -1];
+next_line = [0, [3, 2], -1, 4, [5, 7, 9, -1], 6, 10, 8, 11, 11, [11, 12], -1, 4];
