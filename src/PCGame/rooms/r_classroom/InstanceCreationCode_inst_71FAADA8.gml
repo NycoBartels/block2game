@@ -1,31 +1,39 @@
-n_x = x
-n_y = y
-n_width = sprite_get_width(spr_teacher_idle)
-n_height = sprite_get_height(spr_teacher_idle)
+n_x = x;
+n_y = y;
+n_width = sprite_get_width(spr_teacher_idle);
+n_height = sprite_get_height(spr_teacher_idle);
 sprite_index = spr_teacher_idle;
 sprite_talking = spr_teacher_talking;
 sprite_idle = spr_teacher_idle;
+
 portrait_index = 0;
 name = "Pierre deShawn";
-text = [
-		"Do you need some help?",
-		[
-		"What am I supposed to do?",
-		"Where do I need to go?",
-		"I gotta go..."
-		],
-		"Did you not pay attention in class?",
-		"Oh wait, it hasn't been programmed yet... my bad. Let me fill you in on the details.",
-		"You have to design an analog game. You will be graded equally on 'wayfinding', culture and game mechanics.",
-		"Your job now is to research and produce a prototype of a game that fits these requirements.",
-		"In the end, you will be graded on how well each part is fleshed out.",
-		"Keep in mind what I said about the inside of the onion.",
-		
-		"You should check out the MakerSpace. It's where most students lasercut their board and 3D print their characters.",
-		"It's just outside, check it out for yourself. The staff will help you.",
-		[
-		"Thanks, Pierre"
-		],
-		]; 
+text = ["Hello. Can I help you with something?",    //0, go to 1
+         [
+          "I'd like to buy something",                        //1, go to 3
+          "Nevermind..."                                      //1, go to 2
+         ],
+		 
+		 "Alright, see you around.",						// 2,, END
+         "Oh yeah, sure thing. What would you like?",             //3, go to 4
+		 
+         [
+          "Whatever you recommend",                           //4 go to 5
+          "One taco, please.",								  //4 go to 7
+		  "I'd like on of those Dutch sausage rolls, please",  //4 go to 9
+		  "Nevermind..."										//END
+         ],
+         "Just anything, huh?",            // 5 go to 6
+		 "Hmmmm, I'd recommend the Berliner, it's our specialty.",	//6 go to 10
+         "Ah, not a lot of people get this.",	//7 go to 8
+		 "A nice change of pace, huh?",			//8 go to FINAL 
+		 "Ah those are always nice.",			//9 go to FINAL
+         [
+		 "(Buy it)",							//10 go to 11
+          "(Don't buy it)"						//10 go to 12
+         ],
+		  "Here you go, fijne dag!",				//11, END
+		  "Anything else then?"					//12 go to 4
+         ];                                        
 speakers = [id, obj_player, id, id];
-next_line = [0,[2,8,-1],3,4,5,6,7,1,9,1];
+next_line = [0, [3, 2], -1, 4, [5, 7, 9, -1], 6, 10, 8, 11, 11, [11, 12], -1, 4];
