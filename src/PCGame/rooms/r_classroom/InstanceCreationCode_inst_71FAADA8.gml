@@ -5,35 +5,32 @@ n_height = sprite_get_height(spr_teacher_idle);
 sprite_index = spr_teacher_idle;
 sprite_talking = spr_teacher_talking;
 sprite_idle = spr_teacher_idle;
-
 portrait_index = 0;
 name = "Pierre deShawn";
-text = ["Hello. Can I help you with something?",    //0, go to 1
-         [
-          "I'd like to buy something",                        //1, go to 3
-          "Nevermind..."                                      //1, go to 2
-         ],
-		 
-		 "Alright, see you around.",						// 2,, END
-         "Oh yeah, sure thing. What would you like?",             //3, go to 4
-		 
-         [
-          "Whatever you recommend",                           //4 go to 5
-          "One taco, please.",								  //4 go to 7
-		  "I'd like on of those Dutch sausage rolls, please",  //4 go to 9
-		  "Nevermind..."										//END
-         ],
-         "Just anything, huh?",            // 5 go to 6
-		 "Hmmmm, I'd recommend the Berliner, it's our specialty.",	//6 go to 10
-         "Ah, not a lot of people get this.",	//7 go to 8
-		 "A nice change of pace, huh?",			//8 go to FINAL 
-		 "Ah those are always nice.",			//9 go to FINAL
-         [
-		 "(Buy it)",							//10 go to 11
-          "(Don't buy it)"						//10 go to 12
-         ],
-		  "Here you go, fijne dag!",				//11, END
-		  "Anything else then?"					//12 go to 4
-         ];                                        
+text = [
+		"Hey there, do you need help with something?",		//0, go to 1
+		[
+		"What should the project be about?",				//1, go to 2
+		"Where can I print my game board and game pieces?",
+		"Nevermind..."
+		],
+		//what should the project ...
+		"Did you not pay attention in class?",				//2 to 3
+		"Basically you have to create an analog game with culture elements.",
+		"Wayfinding should also be a big part of the game.",
+		"Your job now is to research and produce a prototype of a game that fits these requirements.",	// 5 to 1
+		
+		//where can i print ?
+		"You should check out the MakerSpace. It's where most students lasercut their board and 3D print their game pieces.",	// 
+		"It's just outside, check it out for yourself. The people there will help you.",  //7, go to 8
+		[
+		"Thanks, Pierre",		//8 go to 9
+		"Thanks, Mr. deShawn"	//8 go to 10
+		],
+		"No worries, good luck with your game.",		//9, END
+		"No need to be so formal, Pierre is fine.",		//10 go to 11
+		"We're in the Netherlands here, teachers and professors tend to be more friendly and personal with the students.",
+		"Anyway, off you go. Good luck with your game."	//12, END
+		]; 
 speakers = [id, obj_player, id, id];
-next_line = [0, [3, 2], -1, 4, [5, 7, 9, -1], 6, 10, 8, 11, 11, [11, 12], -1, 4];
+next_line = [0,[2,6,-1],3,4,5,1,7,8,[9,10],-1,11,-1];
