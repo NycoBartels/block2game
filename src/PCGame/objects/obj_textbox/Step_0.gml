@@ -3,7 +3,7 @@ if(mouse_check_button_pressed(mb_left)){
 	if(!choice_dialogue and counter < str_len){ counter = str_len; }//skip typewriter
 		
 		//page turning
-		else if(page < array_length_1d(text)-1){
+		else if(page < array_length_1d(dialogue)){
 		var line = npc_next_line[page];
 		if(choice_dialogue) line = line[choice];//setting the chosen line
 	
@@ -25,7 +25,6 @@ if(mouse_check_button_pressed(mb_left)){
 			}	
 	}
 }
-
 //changing dialouge choice
 if(choice_dialogue){
 	//getting the amount of questions
