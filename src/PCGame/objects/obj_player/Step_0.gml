@@ -5,7 +5,7 @@ obj_player.npc_width = n_width / 2
 obj_player.npc_height = n_height
 }
 if(point_in_rectangle(mouse_x,mouse_y,npc_x-npc_width,npc_y - npc_height ,npc_x+npc_width,npc_y)){ //checkes if clicked on the npc
-	if(mouse_check_button_pressed(mb_left) && !instance_exists(obj_textbox) && distance_to_object(par_npc) < 50 && distance_to_point(mouse_x,mouse_y) < 50){
+	if(mouse_check_button_pressed(mb_left) && !instance_exists(obj_textbox) && distance_to_object(par_npc) < 25 && distance_to_point(mouse_x,mouse_y) < 50){
 		instance_create_layer(obj_player.x, obj_player.y, "Text", obj_textbox);
 	}
 }
