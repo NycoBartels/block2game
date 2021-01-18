@@ -1,50 +1,47 @@
 //dialouge skip
-if(keyboard_check_pressed(vk_space)){
-	
-	if(!choice_dialogue and counter < str_len){ counter = str_len; }
+if(mouse_check_button_pressed(mb_left)){
+	if(!choice_dialogue and counter < str_len){ counter = str_len; }//skip typewriter
 		
 		//page turning
-		else if(page-10000000 < array_length_1d(text)-1){
+		else if(page < array_length_1d(dialogue)){
 		var line = npc_next_line[page];
-		if(choice_dialogue) line = line[choice];
+		if(choice_dialogue) line = line[choice];//setting the chosen line
 	
 		if(line == 0) page++;	
 		else if(line == -1){ 
-			with (instance_nearest(obj_player.x, obj_player.y, obj_npc)){
+			with (obj_npc){
 				sprite_index = sprite_idle;				//resetting sprite to idle once dialogue done
 			}	
 			instance_destroy(); exit; 
 		}
 		else page = line
-		
-		//setting interact and delay before reset
-		obj_player.interact = false;
-		obj_player.alarm[0] = room_speed *1.5;
 		event_perform(ev_other, ev_user1);
 		
 		//no page destroy tekst box
 	} else{ 
-
 		instance_destroy();
+		with (obj_npc){
+				sprite_index = sprite_idle;				//resetting sprite to idle once dialogue done
+			}	
 	}
 }
-
 //changing dialouge choice
 if(choice_dialogue){
-	choice += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
-	if(choice > text_array_len-1) choice = 0
-	if(choice < 0) choice = text_array_len-1	
-	
-/*
-		var len = array_length_1d(button_height);
+	//getting the amount of questions
+	var len = array_length_1d(button_height);
+	//creating button to the amount of questions
 	var i = 0; repeat(len){
-		button[i] = draw_button(text_x, text_y, text_x+text_max_width, text_y+button_height[i], false);
-		
-	if(button[i] != noone and mouse_check_button_pressed(mb_left)){
-		button[i] = choice
+		//first button checks if the mouse is in the rectangle of the text
+	if(point_in_rectangle(mouse_x,mouse_y,text_x/scale, text_y/scale, (text_x+text_max_width)/scale, (text_y+button_height[0])/scale)){
+			choice = 0
+		}	
+		//the rest of the buttons checks if the mouse is in the rectangle of the text
+		if(i>=1){
+	if(point_in_rectangle(mouse_x,mouse_y,text_x/scale, (text_y+button_height[i-1])/scale, (text_x+text_max_width)/scale, (text_y+button_height[i])/scale)){	
+			choice = i
 	}
-show_debug_message(test)
+		}
 	i++
-
-}*/
 }
+}
+		

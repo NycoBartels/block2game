@@ -2,9 +2,10 @@ box = spr_box;
 port = spr_portrait;
 namebox = spr_namebox;
 
-//setting game view
-gamewidth = room_width * 5;
-gameheight = room_height * 5;
+//setting game view and scale
+scale = 5
+gamewidth = room_width * scale;
+gameheight = room_height * scale;
 
 
 //getting box size
@@ -50,18 +51,15 @@ text_height = string_height("M")
 
 //old tekst box settings
 page = 0;
-text[0] = ""
 name = ""
 choice = 0;
 text = par_npc.text
 choice_col = c_yellow;
 choice_dialogue = false
-
-
 next_line = [0]
 npc_name = "test name";
 
-with(instance_nearest(obj_player.x, obj_player.y, par_npc)){
+with(instance_nearest(mouse_x, mouse_y, par_npc)){//getting info of the nearest npc
 	obj_textbox.message_end = array_length_1d(text);
 	obj_textbox.npc_name = name;
 	obj_textbox.npc_next_line = next_line;
@@ -75,15 +73,7 @@ with(instance_nearest(obj_player.x, obj_player.y, par_npc)){
 text_wrapped = string_wrap (dialogue[page], text_max_width);
 str_len = string_length(dialogue[page]);
 counter = 0;
-test = 0
 
-//event_perform(ev_other, ev_user1);
-
-interact = true;
-
-with (instance_nearest(obj_player.x, obj_player.y, obj_npc)){
+with (instance_nearest(mouse_x, mouse_y, obj_npc)){
 	sprite_index = sprite_talking;			//setting sprite to talking when dialogue starts
 }
-
-
-//stringHeight = string_height(text);

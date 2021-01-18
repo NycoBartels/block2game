@@ -18,7 +18,7 @@ function line_counter(str_array, max_width){
 				str = string_delete(str, last_space, 1);
 				str = string_insert("\n", str, last_space)
 				//counting extra lines
-				line_count = string_count("\n", str) 
+				line_count = string_count("\n", str)+1
 				}
 			count++;
 			}
@@ -26,6 +26,7 @@ function line_counter(str_array, max_width){
 		line_count++
 		//putting button y value in array
 		button_height[i] = line_count * text_height
+			show_debug_message(line_count)
 		//resetting
 		count = 1
 		//next array
@@ -33,6 +34,7 @@ function line_counter(str_array, max_width){
 		}
 	//returning the line values in an array
 	return (button_height);
+	exit
 }
 	
 
