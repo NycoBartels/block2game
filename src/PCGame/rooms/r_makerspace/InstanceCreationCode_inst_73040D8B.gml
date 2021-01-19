@@ -24,7 +24,8 @@ text = ["Hi, you can have your stuff 3D printed here.",    //0, go to 1
          ],
          "If you need anything else, let me know.",            //6, eND
          "Oh okay",
-         ["please end it",
+         [
+		  "please end it",
           "this is a bruh moment"
           ],
 		  "ye it is"				//9

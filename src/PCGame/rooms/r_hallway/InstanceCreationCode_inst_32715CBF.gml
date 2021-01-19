@@ -3,7 +3,7 @@ n_y = y;
 n_width = sprite_get_width(spr_hallwaynpc_idle);
 n_height = sprite_get_height(spr_hallwaynpc_idle);
 sprite_index = spr_hallwaynpc_idle;
-sprite_talking = spr_hallwaynpc_idle;
+sprite_talking = spr_hallwaynpc_talking;
 sprite_idle = spr_hallwaynpc_idle;
 
 portrait_index = 0;

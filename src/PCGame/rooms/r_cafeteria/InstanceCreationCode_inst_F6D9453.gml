@@ -20,17 +20,17 @@ text = ["Hello. Can I help you with something?",    //0, go to 1
          [
           "Whatever you recommend",                           //4 go to 5
           "One taco, please.",								  //4 go to 7
-		  "I'd like on of those Dutch sausage rolls, please",  //4 go to 9
+		  "I'd like a Berliner, please",  //4 go to 9
 		  "Nevermind..."										//END
          ],
          "Just anything, huh?",            // 5 go to 6
-		 "Hmmmm, I'd recommend the Berliner, it's our specialty.",	//6 go to 10
+		 "Hmmmm, I'd recommend the frikandel broodje, it's our specialty.",	//6 go to 10
          "Ah, not a lot of people get this.",	//7 go to 8
 		 "A nice change of pace, huh?",			//8 go to FINAL 
 		 "Ah those are always nice.",			//9 go to FINAL
          [
 		 "(Buy it)",							//10 go to 11
-          "(Don't buy it)"						//10 go to 12
+         "(Don't buy it)"						//10 go to 12
          ],
 		  "Here you go, fijne dag!",				//11, END
 		  "Anything else then?"					//12 go to 4
