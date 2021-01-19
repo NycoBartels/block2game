@@ -1,2 +1,3 @@
 room_dest = r_hallway;
-multi_des = true;
+dest_x = 580;
+dest_y = 110;

@@ -1,2 +1,3 @@
 room_dest = r_classroom;
-multi_des = false
+dest_x = 260;
+dest_y = 110;

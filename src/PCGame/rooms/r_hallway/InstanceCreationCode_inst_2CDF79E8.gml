@@ -1,2 +1,3 @@
 room_dest = r_makerspace;
-multi_des = false
+dest_x = 35;
+dest_y = 100;

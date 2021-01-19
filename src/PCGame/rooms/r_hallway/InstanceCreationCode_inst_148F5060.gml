@@ -1,2 +1,3 @@
 room_dest = r_cafeteria;
-multi_des = false;
+dest_x = 270;
+dest_y = 110;
