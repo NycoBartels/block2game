@@ -4,10 +4,10 @@ namebox = spr_namebox;
 
 //setting game view and scale
 scale = 5
-gamewidth =	view_get_wport(room);		//room_width * scale;
-gameheight = view_get_hport(room);			//room_height * scale;
-
-
+gamewidth =	view_get_wport(r_hallway);		//room_width * scale;
+gameheight = view_get_hport(r_hallway);	
+show_debug_message(gamewidth)
+//room_height * scale;
 //getting box size
 boxwidth = sprite_get_width(box);
 boxheight = sprite_get_height(box);
@@ -17,8 +17,8 @@ nameboxwidth = sprite_get_height(namebox);
 nameboxheight = sprite_get_height(namebox);
 
 //setting box placement
-port_x = (gamewidth - boxwidth - portwidth) * 0.6;
-port_y = (gameheight*0.85) - portheight;
+port_x = (gamewidth - boxwidth - portwidth) * 0.5;
+port_y = (gameheight) - portheight;
 box_x = (port_x + portwidth);
 box_y = port_y;
 namebox_x = port_x;

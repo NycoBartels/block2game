@@ -29,6 +29,8 @@ if(mouse_check_button_pressed(mb_left)){
 if(choice_dialogue){
 	//getting the amount of questions
 	var len = array_length_1d(button_height);
+	show_debug_message(text_x/scale)
+	show_debug_message(mouse_x)
 	//creating button to the amount of questions
 	var i = 0; repeat(len){
 		//first button checks if the mouse is in the rectangle of the text
