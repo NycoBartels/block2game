@@ -52,11 +52,11 @@ if (mouse_check_button_pressed(mb_left) and active_textbox= false){
 	if(inst == noone){ //if valid space found walk to valid space
 		path = path_add();
 		mp_grid_path(grid, path, x, y, target_x, target_y, true);
-		path_start(path, 1.2, path_action_stop, true);
-		
+		path_start(path, 1.2, path_action_stop, true);	
 	}
 }
 
 if (obj_player.x == target_x && obj_player.y == target_y) {
 	sprite_index = spr_player_idle;				// resetting sprite to idle when reached destination
 }
+show_debug_message(test)
