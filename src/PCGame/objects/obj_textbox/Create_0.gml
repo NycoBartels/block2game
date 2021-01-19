@@ -4,25 +4,29 @@ namebox = spr_namebox;
 
 //setting game view and scale
 scale = 5
-gamewidth =	view_get_wport(r_hallway);		//room_width * scale;
-gameheight = view_get_hport(r_hallway);	
+gamewidth =	view_get_wport(r_cafeteria);		//room_width * scale;
+gameheight = view_get_hport(r_cafeteria);			//room_height * scale;
 show_debug_message(gamewidth)
-//room_height * scale;
+show_debug_message(gameheight)
 //getting box size
 boxwidth = sprite_get_width(box);
 boxheight = sprite_get_height(box);
-portwidth = sprite_get_width(port);
-portheight = sprite_get_height(port);
+//portwidth = sprite_get_width(port);
+//portheight = sprite_get_height(port);
 nameboxwidth = sprite_get_height(namebox);
 nameboxheight = sprite_get_height(namebox);
 
 //setting box placement
-port_x = (gamewidth - boxwidth - portwidth) * 0.5;
-port_y = (gameheight) - portheight;
-box_x = (port_x + portwidth);
-box_y = port_y;
-namebox_x = port_x;
-namebox_y = port_y - nameboxheight;
+//port_x = (gamewidth - boxwidth - portwidth) * 0.5;
+//port_y = (gameheight) - portheight;
+//box_x = (port_x + portwidth);
+//box_y = port_y
+box_x = (gamewidth - boxwidth)*0.5
+box_y = (gameheight) - boxheight
+//namebox_x = port_x;
+//namebox_y = port_y - nameboxheight;
+namebox_x = box_x;
+namebox_y = box_y - nameboxheight;
 
 //space between box and text box
 x_buffer = 15; //multiplied by 5 already

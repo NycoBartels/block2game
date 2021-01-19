@@ -1,7 +1,7 @@
 //draw box
 draw_sprite(box, 0, box_x, box_y);
 //draw portraitbox
-draw_sprite(port, 0, port_x, port_y);
+//draw_sprite(port, 0, port_x, port_y);
 //draw namebox
 draw_sprite(namebox, 0, namebox_x, namebox_y);
 
