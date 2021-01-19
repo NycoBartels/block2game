@@ -39,7 +39,7 @@ text = ["Hi, did you already hear about hallway1 and my unfortunate project memb
 		  //i understand
 		  //i just worry, but how to help
 		  "There is so little I can do to help...",		//14, go to 15
-		  "All we can do as a team is give them a bit of leniency"		//15, END
+		  "All we can do as a team is give them a bit of leniency."		//15, END
 		  
          ];                                        //
 speakers = [id, obj_player, id, id];
