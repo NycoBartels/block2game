@@ -32,6 +32,7 @@
     {"id":{"name":"r_cafeteria","path":"rooms/r_cafeteria/r_cafeteria.yy",},"order":3,},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"order":3,},
     {"id":{"name":"spr_chair_left","path":"sprites/spr_chair_left/spr_chair_left.yy",},"order":7,},
+    {"id":{"name":"doorhandle","path":"sounds/doorhandle/doorhandle.yy",},"order":1,},
     {"id":{"name":"spr_lasercutter_npc_talking","path":"sprites/spr_lasercutter_npc_talking/spr_lasercutter_npc_talking.yy",},"order":9,},
     {"id":{"name":"Sprite7","path":"sprites/Sprite7/Sprite7.yy",},"order":17,},
     {"id":{"name":"line_counter","path":"scripts/line_counter/line_counter.yy",},"order":2,},
