@@ -9,7 +9,7 @@ if(mouse_check_button_pressed(mb_left)){
 	
 		if(line == 0) page++;	
 		else if(line == -1){ 
-			with (obj_npc){
+			with (instance_nearest(obj_player.x, obj_player.y,obj_npc)){
 				sprite_index = sprite_idle;				//resetting sprite to idle once dialogue done
 			}	
 			instance_destroy(); exit; 
@@ -20,7 +20,7 @@ if(mouse_check_button_pressed(mb_left)){
 		//no page destroy tekst box
 	} else{ 
 		instance_destroy();
-		with (obj_npc){
+		with (instance_nearest(obj_player.x, obj_player.y,obj_npc)){
 				sprite_index = sprite_idle;				//resetting sprite to idle once dialogue done
 			}	
 	}
