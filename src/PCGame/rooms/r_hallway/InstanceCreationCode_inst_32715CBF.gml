@@ -20,7 +20,7 @@ text = ["I can't believe they didn't show up again...",    //0, go to 1
 		  "Ask them why they can't join."						//4 go to 6
 		  ],
 		  "The contract states that, if they give a good reason, you can't strike them.",	//5 go to 6
-		  "They always have a good excuse ready, but I think they're lying.",				//6 go to 7
+		  "They always have a convenient excuse ready, but I think they're lying.",				//6 go to 7
 		  [
 		  "Confront them about their lies.",					//7 go to 8
 		  "Suck it up and just keep doing the project.",		//7 go to 10

@@ -33,4 +33,4 @@ text = [
 		"Anyway, off you go. Good luck with your game."	//12, END
 		]; 
 speakers = [id, obj_player, id, id];
-next_line = [0,[2,6,-1],3,4,5,1,7,8,[9,10],-1,11,-1];
+next_line = [1,[2,6,-1],3,4,5,1,7,8,[9,10],-1,11,-1];
