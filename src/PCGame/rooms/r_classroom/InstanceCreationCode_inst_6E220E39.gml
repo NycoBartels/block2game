@@ -21,7 +21,9 @@ text = ["Oh hey, you're back already?",
 			"Did you print the board and the game pieces?",		//3, 4
 			
 			[
-			"Uh... I gotta go, something urgent came up."		//  4,END
+			
+			"Uh... I gotta go, something urgent came up.",		//  4,END
+			"I... uh... left something in the MakerSpace... I'll be right back.",
 			],
 			
 			"Well, if you still haven't printed the game board and pieces, you should probably do that already.",
@@ -30,4 +32,4 @@ text = ["Oh hey, you're back already?",
 			"Maybe ask the teacher, he gave us the assignment after all.", //8, END
          ];                                        //
 speakers = [id, obj_player, id, id];
-next_line = [0,[6, 2, -1], 3,4,5,[-1],7,8,9,1];
+next_line = [0,[6, 2, -1], 3,4,5,[-1,-1],7,8,9,1];
