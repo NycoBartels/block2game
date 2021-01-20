@@ -12,7 +12,7 @@ text = ["Hello, my name is Jan Peter van Goochelen, can I help you with somethin
          [
           "What do you do here?",
 		  "Can you print these files from my USB-stick?",                        //1, go to 2
-          "Nah, just want to talk.",                     //1, go to 4
+          "I just want to talk.",                     //1, go to 4
           "Never mind..."                                      //1, END
          ],
 		 //What do you do here
@@ -21,15 +21,16 @@ text = ["Hello, my name is Jan Peter van Goochelen, can I help you with somethin
 		 "Ah, speaking of it, is your file the correct format?",
 		 "It should be .stl, .obj or .amf.",
 		 "Yours seems to be the wrong format, you have to change it.",
+		 "Maybe check back with your project group for that.",
 		 
 		 [
-			"Okay.",
+			"Okay.",			// , END
 			"Can you tell me more about the technical stuff?"
 		 ],
 		 //technical stuff
 		 "Sure. Obj files is a standart 3D image format and amf stands for Additive Manufacturing file format.",
 		 "The 3D printer doesn't support any other formats, so make sure to use these.",
-		 "Was there something else you wanted to ask?",
+		 "Was there something else you wanted to ask?",				// back to 1
 		 
 		 
 		 // Print pls
@@ -42,7 +43,7 @@ text = ["Hello, my name is Jan Peter van Goochelen, can I help you with somethin
 
          ];                                        //7, END
 speakers = [id, obj_player, id, id];
-next_line = [0, [2, 4, -1], 3, -1, 5, [6, 7], -1, 0, [-1, 9], -1];
+next_line = [0, [2, 4, -1], 3, 1, 5, [6, 7], -1, 0, [-1, 9], -1];
 
 
 

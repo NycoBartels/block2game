@@ -21,7 +21,7 @@ text = ["Enter the code of the item you'd like to purchase",
 		  "Cancel"
 		 ],
 		  "......",
-		  "The ejection mechanic seems to be broken.",
+		  "The ejection mechanism seems to be broken.",
 		  "*You reminisce the time you were 1,30 Euros richer*"
 
          ];                                        

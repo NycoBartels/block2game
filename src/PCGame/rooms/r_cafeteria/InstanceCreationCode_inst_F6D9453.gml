@@ -7,7 +7,7 @@ sprite_talking = spr_lunchlady_talking;
 sprite_idle = spr_lunchlady_idle;
 
 portrait_index = 0;
-name = "LunchPerson";
+name = "Kim";
 text = ["Hello. Can I help you with something?",    //0, go to 1
          [
           "I'd like to buy something",                        //1, go to 3
