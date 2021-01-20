@@ -28,6 +28,7 @@
     {"id":{"name":"spr_teacher_talking","path":"sprites/spr_teacher_talking/spr_teacher_talking.yy",},"order":7,},
     {"id":{"name":"spr_chair_right","path":"sprites/spr_chair_right/spr_chair_right.yy",},"order":6,},
     {"id":{"name":"spr_lunchlady_idle","path":"sprites/spr_lunchlady_idle/spr_lunchlady_idle.yy",},"order":5,},
+    {"id":{"name":"m_background","path":"sounds/m_background/m_background.yy",},"order":0,},
     {"id":{"name":"r_cafeteria","path":"rooms/r_cafeteria/r_cafeteria.yy",},"order":3,},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"order":3,},
     {"id":{"name":"spr_chair_left","path":"sprites/spr_chair_left/spr_chair_left.yy",},"order":7,},
@@ -51,6 +52,7 @@
     {"id":{"name":"spr_box2","path":"sprites/spr_box2/spr_box2.yy",},"order":8,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":9,},
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"order":6,},
+    {"id":{"name":"obj_music","path":"objects/obj_music/obj_music.yy",},"order":11,},
     {"id":{"name":"spr_3dprinter_npc_talking","path":"sprites/spr_3dprinter_npc_talking/spr_3dprinter_npc_talking.yy",},"order":11,},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},"order":16,},
     {"id":{"name":"spr_3dprinter_idle","path":"sprites/spr_3dprinter_idle/spr_3dprinter_idle.yy",},"order":10,},
@@ -111,14 +113,14 @@
     {"folderPath":"folders/Sprites/Dialogue sprites.yy","order":4,"resourceVersion":"1.0","name":"Dialogue sprites","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
-    {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
+    {"targets":-1,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
   ],
   "TextureGroups": [
-    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
+    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.0","name":"Default","resourceType":"GMTextureGroup",},
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.1.542",
+    "IDEVersion": "2.3.1.536",
   },
   "resourceVersion": "1.4",
   "name": "PCGame",
