@@ -24,7 +24,7 @@ text = [
 		],		// v 5
 		"Okay... what aspect would you like to explore more in a game? cultural differences between countries or the impact of culture on individuals?",
 		[
-		"Cultural difference bewteen countries.",
+		"Cultural difference between countries.",
 		"Impact of culture on individuals.",
 		"That's too difficult to answer for me."
 		],		// v 7
